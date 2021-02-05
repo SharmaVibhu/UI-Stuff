@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script> 
+        function f2() { 
+          document.getElementById("demo").innerHTML = "Javascript in Head"; 
+        } 
+     </script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASICS</title>
+</head>
+<body>
+    <h1> USING Local vaiable , Global Variable and functions</h1>
+    <script>
+        var str = "apple"; //Global Variable
+        function f1(){
+            var i = 20;    //Local Variable
+            document.writeln("Displaying the global variable " + str + "<br>");
+            document.write("Displaying the local variable " + i);
+        }
+        f1();
+    </script>
+    <h1>Using Operators and Expression</h1>
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = a+b; //expression
+        document.writeln("sum of "+ a + " and " + b + "=  " + c);
+    </script>
+    <h1>DOM INERACTION</h1>
+    <p id="demo" >JAVASCRIPT IN HEAD</p>
+    <button type="button" onclick="f2()">click it</button>
+</body>
+</html>
